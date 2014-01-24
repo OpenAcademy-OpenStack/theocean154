@@ -1,4 +1,9 @@
-theocean154
+OpenAcademy - OpenStack
 ===========
+Various exercises and projects for OpenStack as part of OpenAcademy
 
-Code for OpenAcademy program, Project: OpenStack
+
+Ex1 - Getting familiar with Python APIs
+------------------------------------------
+Authorize with Keystone, query Glance for image list, build VM for all ubuntu images.
+
