@@ -26,10 +26,7 @@ images = glance.images.list()
 for image in images:
 	if image.name.find('ubuntu') > -1: 
 		print image
-	"""image = nova.images.find(name="ubuntu")
-	flavor = nova.flavors.find(name="m1.micro")
-
-	nova_client.servers.create(name='test',
+		flavor = nova.flavors.find(name="m1.micro")
+		nova.servers.create(name=image.name,
                        image=image,
                        flavor=flavor)
-"""
