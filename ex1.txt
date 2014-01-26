@@ -1,1 +1,0 @@
- python app to query the list of images containing name ubuntu, and create a VM of the image.
