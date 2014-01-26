@@ -22,10 +22,9 @@ nova = nclient.Client(os.environ.get('OS_USERNAME'), os.environ.get('OS_PASSWORD
 #Fetch list of compute nodes
 images = glance.images.list()
 
-# print images
+#make vms 
 for image in images:
 	if image.name.find('ubuntu') > -1: 
-		print image
 		flavor = nova.flavors.find(name="m1.micro")
 		nova.servers.create(name=image.name,
                        image=image,
